@@ -130,7 +130,7 @@ static void hrtimers_test_print_samplings(void)
     pr_info(
       " [%2d] %7d = %10llu nS\n",
       (index + 1),
-      timer_perf_samplings[index].expected,
+      timer_perf_samplings[index].expected * 1000,
       ktime_to_ns(timer_perf_samplings[index].sampled)
     );
   }
